@@ -7,7 +7,7 @@ executable_path = os.path.abspath(os.path.dirname(sys.argv[0]))
 
 app_exe_path = os.path.join(executable_path, "app.exe")
 # Define o nome do semáforo
-SEMAPHORE_NAME = "Licenca.Exe"
+SEMAPHORE_NAME = "app.exe"
 
 # Cria um semáforo com valor inicial 1 (permitindo que um processo seja executado)
 semaphore = win32event.CreateSemaphore(None, 1, 1, SEMAPHORE_NAME)
